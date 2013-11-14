@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=a\ n
+comment1.target=java.lang.String\ toANF(java.util.ArrayList,\ int)
+comment2.params=f\ n
+comment2.target=java.lang.String\ parse(int[],\ int)
+comment3.params=f\ n
+comment3.target=java.lang.String\ parse(java.math.BigInteger,\ int)
+comment4.params=s\ n
+comment4.target=java.lang.String\ buildMult(java.lang.String[],\ int)
+comment5.params=n
+comment5.target=java.math.BigInteger[]\ buildListThing(int)
+comment6.params=f
+comment6.target=java.lang.String\ form(java.lang.String)
+comment7.params=s\ c
+comment7.target=int\ count(java.lang.String,\ char)
+comment8.params=f
+comment8.target=int\ degree(java.lang.String)
+numComments=9

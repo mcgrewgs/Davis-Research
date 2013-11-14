@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=i\ j
+comment0.target=Algorithm(int,\ int)
+comment1.params=
+comment1.target=void\ run()
+comment2.params=word
+comment2.target=byte[]\ wht(int)
+comment3.params=t
+comment3.target=java.lang.String\ whtToString(byte[])
+comment4.params=p\ n
+comment4.target=java.lang.String\ toANF(int,\ int)
+comment5.params=p\ n
+comment5.target=java.lang.String\ toANF(long,\ int)
+comment6.params=word
+comment6.target=boolean\ t32(int)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

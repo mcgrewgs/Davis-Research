@@ -1,0 +1,84 @@
+We started with this list of 70 (the 721 left after GenProd, minus the 649 from Taylor's thesis and the two others we got in the summer):
+[ 323, 351, 353, 367, 368, 369, 370, 372, 373, 374, 375, 376, 379, 380, 381, 408, 409, 433, 434, 435, 436, 437, 439, 440, 442, 449, 450, 452, 501, 509, 514, 522, 532, 536, 5331, 5421, 5422, 5423, 5427, 5430, 6532, 6533, 6620, 6629, 6631, 6639, 6641, 6642, 6647, 6648, 6674, 6676, 6678, 6693, 6696, 6700, 6701, 6704, 6709, 6711, 6712, 6714, 6715, 6716, 6717, 6718, 6720, 6721, 23224, 23225 ]
+
+
+
+Our plan of attack was to find a normal subgroup of size at least 32 that many groups in this list have, find an isomorphic normal subgroup in Z16xZ16, determine the blocks of the McFarland-like difference set in that subgroup, then use those as our blocks in the other groups, applying permutations of coset reps as usual.
+
+
+
+These 54 groups had a normal subgroup isomorphic to Z8xZ4:
+[ 367, 368, 369, 370, 372, 373, 374, 375, 376, 379, 380, 381, 433, 434, 435, 436, 437, 439, 440, 442, 449, 450, 452, 509, 522, 532, 5331, 5421, 5422, 5423, 5427, 5430, 6629, 6631, 6639, 6641, 6642, 6647, 6648, 6674, 6676, 6678, 6693, 6696, 6709, 6711, 6712, 6714, 6715, 6716, 6717, 6718, 6720, 6721 ]
+
+Of these, we were able to construct a difference set in these 26 groups: 
+[ 369, 370, 372, 375, 376, 379, 433, 435, 437, 439, 442, 450, 452, 509, 522, 5331, 5422, 5423, 6631, 6641, 6676, 6712, 6714, 6715, 6718, 6721 ]
+
+
+
+These 62 groups had a normal subgroup isomorphic to Z16xZ2:
+[ 323, 351, 353, 367, 368, 369, 370, 372, 373, 374, 375, 376, 379, 380, 381, 408, 409, 433, 434, 435, 436, 437, 439, 440, 442, 449, 450, 452, 501, 532, 536, 5421, 5422, 5423, 5427, 5430, 6620, 6629, 6631, 6639, 6641, 6642, 6647, 6648, 6674, 6676, 6678, 6693, 6696, 6700, 6701, 6704, 6709, 6711, 6712, 6714, 6715, 6716, 6717, 6718, 6720, 6721 ]
+
+Of those, these 39 were still left undetermined:
+[ 323, 351, 353, 367, 368, 373, 374, 380, 381, 408, 409, 434, 436, 440, 449, 501, 532, 536, 5421, 5427, 5430, 6620, 6629, 6639, 6642, 6647, 6648, 6674, 6678, 6693, 6696, 6700, 6701, 6704, 6709, 6711, 6716, 6717, 6720 ]
+
+Of these, we were able to construct a difference set in this 1 group:
+[ 6639 ]
+
+
+
+These 31 groups had a normal subgroup isomorphic to Z32xZ2:
+[ 449, 450, 452, 501, 532, 536, 6620, 6629, 6639, 6641, 6642, 6647, 6648, 6674, 6676, 6678, 6693, 6696, 6700, 6701, 6704, 6709, 6711, 6712, 6714, 6715, 6716, 6717, 6718, 6720, 6721 ]
+
+Of those, these 21 were still left undetermined:
+[ 449, 501, 532, 536, 6620, 6629, 6642, 6647, 6648, 6674, 6678, 6693, 6696, 6700, 6701, 6704, 6709, 6711, 6716, 6717, 6720 ]
+
+Of these, we were able to construct a difference set in these 2 groups:
+[ 6678, 6696 ]
+
+
+
+So, we have eliminated these 29 groups:
+[ 369, 370, 372, 375, 376, 379, 433, 435, 437, 439, 442, 450, 452, 509, 522, 5331, 5422, 5423, 6631, 6639, 6641, 6676, 6678, 6696, 6712, 6714, 6715, 6718, 6721 ]
+
+Leaving these 41:
+[ 323, 351, 353, 367, 368, 373, 374, 380, 381, 408, 409, 434, 436, 440, 449, 501, 514, 532, 536, 5421, 5427, 5430, 6532, 6533, 6620, 6629, 6642, 6647, 6648, 6674, 6693, 6700, 6701, 6704, 6709, 6711, 6716, 6717, 6720, 23224, 23225 ]
+
+
+
+These 25 groups had a normal subgroup isomorphic to Z16xZ4:
+[ 367, 368, 373, 374, 380, 381, 434, 436, 440, 449, 532, 5421, 5427, 5430, 6629, 6642, 6647, 6648, 6674, 6693, 6709, 6711, 6716, 6717, 6720 ]
+
+Of these, we were able to construct a difference set in this 1 group:
+[ 436 ]
+
+
+
+These 11 groups had a normal subgroup isomorphic to Z32:
+[ 449, 501, 532, 536, 6620, 6642, 6647, 6648, 6716, 6717, 6720 ]
+
+Of these, we were not able to construct a difference set in any group:
+[ ]
+
+
+
+These 15 groups had a normal subgroup isomorphic to Z8xZ2xZ2:
+[ 323, 351, 353, 408, 409, 501, 6532, 6533, 6620, 6629, 6700, 6701, 6704, 23224, 23225 ]
+
+Of these, we were able to construct a difference set in these 2 groups:
+[ 6532, 23224 ]
+
+
+
+Now, we have eliminated these 32 groups:
+[ 369, 370, 372, 375, 376, 379, 433, 435, 436, 437, 439, 442, 450, 452, 509, 522, 5331, 5422, 5423, 6532, 6631, 6639, 6641, 6676, 6678, 6696, 6712, 6714, 6715, 6718, 6721, 23224 ]
+
+Leaving these 38:
+[ 323, 351, 353, 367, 368, 373, 374, 380, 381, 408, 409, 434, 440, 449, 501, 514, 532, 536, 5421, 5427, 5430, 6533, 6620, 6629, 6642, 6647, 6648, 6674, 6693, 6700, 6701, 6704, 6709, 6711, 6716, 6717, 6720, 23225 ]
+
+
+
+
+We start another check on these 24 remaining groups with a Z8xZ4 subgroup using a second set of blocks:
+[ 367, 368, 373, 374, 380, 381, 434, 440, 449, 532, 5421, 5427, 5430, 6629, 6642, 6647, 6648, 6674, 6693, 6709, 6711, 6716, 6717, 6720 ]
+
+Of these, we were able to construct a difference set in these groups:

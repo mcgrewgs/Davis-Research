@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=s\ var
+comment1.target=java.lang.String\ parseSum(java.lang.String,\ java.lang.String)
+comment2.params=s\ var
+comment2.target=java.lang.String\ parseEven(java.lang.String,\ java.lang.String)
+comment3.params=s\ var
+comment3.target=java.lang.String\ parseOdd(java.lang.String,\ java.lang.String)
+numComments=4

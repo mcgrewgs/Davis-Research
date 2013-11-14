@@ -1,1 +1,1 @@
-I am a Readme.  As of right now, you are reading me.  So I have served my purpose.
+Ultimately, this repository will contain all the code, writeups, etc that have collectively been done for the Davis team, as far back as I have.
