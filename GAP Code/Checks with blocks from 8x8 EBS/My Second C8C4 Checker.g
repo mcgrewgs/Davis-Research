@@ -1,4 +1,4 @@
-# Read("C:/Users/Gavin/Desktop/GAP Code/My Second C8C4 Checker.g");
+# Read("C:/Users/Gavin/Documents/GitHub/Davis-Research/GAP Code/Checks with blocks from 8x8 EBS/My Second C8C4 Checker.g");
 # C16 x C16 is group 39
 LoadPackage("rds");
 
@@ -6,9 +6,11 @@ thisBetterNotBeEmpty:=[];
 
 haveDS := [];
 
-haveZ8Z4 := [ 367, 368, 373, 374, 380, 381, 434, 440, 449, 532, 5421, 5427, 5430, 6629, 6642, 6647, 6648, 6674, 6693, 6709, 6711, 6716, 6717, 6720 ];
+haveZ8Z4 := [ 367, 368, 380, 381, 6642, 6647, 6648, 6711 ];
 
 haveZ8Z4 := [ 39 ];
+
+haveZ8Z4:=[ 1, 39, 316, 497, 537, 826, 4384, 5525, 6534, 6723, 6732, 10298, 13313, 26308, 26959, 26973, 53038, 55608, 55626, 56059, 56082, 56092 ];
 
 checkAll:=[];
 
@@ -87,14 +89,47 @@ for di in check do
 
                 cosetReps:=[r1,  r2,  r3,  r4,  r5,  r6,  r7,  r8];
 
-                b1:=[ x, x^3, x*y^2, x^3*y^2, x*y^4, x^3*y^4, x*y^6, x^3*y^6 ];
-                b2:=[ x^0, x, x^2, x^3, y, x^2*y, x*y^3, x^3*y^3, y^4, x*y^4, x^2*y^4, x^3*y^4, y^5, x^2*y^5, x*y^7, x^3*y^7 ];
-                b3:=[ x^0, x, y, x^3*y, y^2, x*y^2, y^3, x^3*y^3, y^4, x*y^4, y^5, x^3*y^5, y^6, x*y^6, y^7, x^3*y^7 ];
-                b4:=[ x^0, x, y, x*y, x^2*y^2, x^3*y^2, x^2*y^3, x^3*y^3, y^4, x*y^4, y^5, x*y^5, x^2*y^6, x^3*y^6, x^2*y^7, x^3*y^7 ];
-                b5:=[ x^0, x, x^2, x^3, y, x^2*y, y^2, x*y^2, x^2*y^2, x^3*y^2, y^3, x^2*y^3, x*y^5, x^3*y^5, x*y^7, x^3*y^7 ];
-                b6:=[ x^0, x, x^2, x^3, y, x^2*y, y^3, x^2*y^3, x*y^5, x^3*y^5, y^6, x*y^6, x^2*y^6, x^3*y^6, x*y^7, x^3*y^7 ];
-                b7:=[ x^0, y, y^2, x*y^2, y^3, x*y^4, x^2*y^4, x^2*y^5, x^2*y^6, x^3*y^6, x*y^7, x^2*y^7, x^3, x*y, x^3*y^3, x^3*y^5 ];
-                b8:=[ y, y^2, x*y^3, y^4, x^2*y^5, x^2*y^6, y^7, x^3*y^7, x, x^2, x*y, x*y^2, x^2*y^3, x^3*y^4, x^3*y^5, x^3*y^6 ]; 
+                b1:=[];
+                b2:=[];
+                b3:=[];
+                b4:=[];
+                b5:=[];
+                b6:=[];
+                b7:=[];
+                b8:=[];
+
+                Append(b1,Elements(RightCoset(Subgroup(H,[x^2,y^2]),x)));
+
+                Append(b2,Elements(RightCoset(Subgroup(H,[x]),x^0)));
+                Append(b2,Elements(RightCoset(Subgroup(H,[x]),y^4)));
+                Append(b2,Elements(RightCoset(Subgroup(H,[x^2,y^4]),y)));
+                Append(b2,Elements(RightCoset(Subgroup(H,[x^2,y^4]),x*y^3)));
+
+                Append(b3,Elements(RightCoset(Subgroup(H,[y]),x^0)));
+                Append(b3,Elements(RightCoset(Subgroup(H,[x^2*y]),x)));
+
+                Append(b4,Elements(RightCoset(Subgroup(H,[x*y]),x^0)));
+                Append(b4,Elements(RightCoset(Subgroup(H,[x^3*y]),x)));
+
+                Append(b5,Elements(RightCoset(Subgroup(H,[x]),x^0)));
+                Append(b5,Elements(RightCoset(Subgroup(H,[x]),y^2)));
+                Append(b5,Elements(RightCoset(Subgroup(H,[x*y^4]),y)));
+                Append(b5,Elements(RightCoset(Subgroup(H,[x*y^4]),y^3)));
+
+                Append(b6,Elements(RightCoset(Subgroup(H,[x]),x^0)));
+                Append(b6,Elements(RightCoset(Subgroup(H,[x]),y^6)));
+                Append(b6,Elements(RightCoset(Subgroup(H,[x*y^4]),y)));
+                Append(b6,Elements(RightCoset(Subgroup(H,[x*y^4]),y^3)));
+
+                Append(b7,Elements(RightCoset(Subgroup(H,[x*y^2]),x^0)));
+                Append(b7,Elements(RightCoset(Subgroup(H,[x*y^2]),y^2)));
+                Append(b7,Elements(RightCoset(Subgroup(H,[x*y^6]),y)));
+                Append(b7,Elements(RightCoset(Subgroup(H,[x*y^6]),y^3)));
+
+                Append(b8,Elements(RightCoset(Subgroup(H,[x*y^2]),y)));
+                Append(b8,Elements(RightCoset(Subgroup(H,[x*y^2]),x*y)));
+                Append(b8,Elements(RightCoset(Subgroup(H,[x*y^6]),y^2)));
+                Append(b8,Elements(RightCoset(Subgroup(H,[x*y^6]),y^4)));
 
                 legos:=[b1,b2,b3,b4,b5,b6,b7,b8];
 
