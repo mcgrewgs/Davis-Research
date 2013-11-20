@@ -111,11 +111,7 @@ findDS:=function(G,legos,cosetReps,currentPerm,count,maxPerms)
                 Print( diffset,  "\n" );
                 Print("Found one! \n");
                 Add(thisBetterNotBeEmpty,[di,diffset]);
-<<<<<<< HEAD
                 #Add(haveDS,di);
-=======
-                Add(haveDS,di);
->>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
                 return 1;
             fi;
         fi;
@@ -170,9 +166,9 @@ haveDS := [];
 
 haveZ8Z4 := [ 367, 368, 380, 381, 6642, 6647, 6648, 6711 ]; # remaining with 8x4
 
-haveZ8Z4 := [ 39 ]; # 16x16
+#haveZ8Z4 := [ 39 ]; # 16x16
 
-haveZ8Z4:=[ 1, 39, 316, 497, 537, 826, 4384, 5525, 6534, 6723, 6732, 10298, 13313, 26308, 26959, 26973, 53038, 55608, 55626, 56059, 56082, 56092 ]; # Abelian
+#haveZ8Z4:=[ 1, 39, 316, 497, 537, 826, 4384, 5525, 6534, 6723, 6732, 10298, 13313, 26308, 26959, 26973, 53038, 55608, 55626, 56059, 56082, 56092 ]; # Abelian
 
 checkAll:=[];
 
@@ -181,8 +177,6 @@ for i in haveZ8Z4 do
         Add(checkAll,i);
     fi;
 od;
-
-Print(checkAll,"\n\n");
 
 haveDS := [];
 
@@ -197,6 +191,8 @@ while 1=1 do
         break;
     fi;
 od;
+
+Print(check,"\n\n");
 
 Print("Checking ", Length(check), " groups for a DS with C8 x C4. \n");
 
@@ -216,11 +212,7 @@ for di in check do
         if ( ( not ( x = 0 ) ) and ( not ( y = 0 ) ) ) then
             cosets:=CosetDecomposition(G,H);
             for i1 in [1..2] do
-<<<<<<< HEAD
                 for i2 in [1..2] do
-=======
-                for i2 in [1..2] dp
->>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
                     for i3 in [1..2] do
                         for i4 in [1..2] do
                             r1:=cosets[1][1];
@@ -238,10 +230,7 @@ for di in check do
                             found:=findDS(G,legos,cosetReps,currentPerm,count,maxPerms);
                             if not found=0 then
                                 Add(haveDS,di);
-<<<<<<< HEAD
-                                Print("Coset reps: [",i1,",",i2,",",i3,",",i4,"]\n");
-=======
->>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
+                                Print("Coset rep indices: [",i1,",",i2,",",i3,",",i4,"]\n");
                                 break;
                             fi;
                         od;
