@@ -111,7 +111,11 @@ findDS:=function(G,legos,cosetReps,currentPerm,count,maxPerms)
                 Print( diffset,  "\n" );
                 Print("Found one! \n");
                 Add(thisBetterNotBeEmpty,[di,diffset]);
+<<<<<<< HEAD
                 #Add(haveDS,di);
+=======
+                Add(haveDS,di);
+>>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
                 return 1;
             fi;
         fi;
@@ -212,7 +216,11 @@ for di in check do
         if ( ( not ( x = 0 ) ) and ( not ( y = 0 ) ) ) then
             cosets:=CosetDecomposition(G,H);
             for i1 in [1..2] do
+<<<<<<< HEAD
                 for i2 in [1..2] do
+=======
+                for i2 in [1..2] dp
+>>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
                     for i3 in [1..2] do
                         for i4 in [1..2] do
                             r1:=cosets[1][1];
@@ -230,7 +238,10 @@ for di in check do
                             found:=findDS(G,legos,cosetReps,currentPerm,count,maxPerms);
                             if not found=0 then
                                 Add(haveDS,di);
+<<<<<<< HEAD
                                 Print("Coset reps: [",i1,",",i2,",",i3,",",i4,"]\n");
+=======
+>>>>>>> 8883ecf10367e94e3f77f6d96a7bc25686f34a83
                                 break;
                             fi;
                         od;
